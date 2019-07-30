@@ -7,7 +7,7 @@
  $userRow=mysqli_fetch_array($res);
  
  if(!isset($_SESSION['user'])){
- header("Location: WP_login.php");
+ header("Location: login.php");
  }
  
  $res2=mysqli_query($conn,"SELECT * FROM chatrooms WHERE owner='".$userRow['userName']."'");
